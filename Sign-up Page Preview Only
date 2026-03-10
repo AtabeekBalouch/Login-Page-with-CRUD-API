@@ -1,0 +1,114 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign up Form</title>
+    <link rel="stylesheet" href="signup/signup.css">
+  </head>
+  <body>
+    <input class="First" type="text" placeholder="First name">
+    <input class="Secound" type="text" placeholder="Last name">
+    <input class="Thrid" type="text" placeholder="Email">
+    <button class="Click">Sign Up</button>
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Animation</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0b0e2a;
+    overflow:hidden;
+}
+
+/* Main container */
+.container{
+    position:relative;
+    width:300px;
+    height:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Center image */
+.Login-Image{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    z-index:2;
+}
+
+/* Orbit circle */
+.orbit{
+    position:absolute;
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    animation:rotate 12s linear infinite;
+}
+
+/* Orbit text letters */
+.orbit span{
+    position:absolute;
+    left:50%;
+    top:0;
+    transform-origin:0 125px;
+    color:#00bfff;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow:0 0 10px #00bfff;
+    animation:glow 2s ease-in-out infinite;
+}
+
+/* Rotation animation */
+@keyframes rotate{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+/* Glow effect */
+@keyframes glow{
+    0%,100%{text-shadow:0 0 8px #00bfff,0 0 15px #00bfff;}
+    50%{text-shadow:0 0 18px #1e90ff,0 0 28px #1e90ff;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img class="Login-Image" src="Project-Login/Logo/Capture.JPG" alt="Login Logo">
+
+<div class="orbit">
+<span style="transform:rotate(0deg)">L</span>
+<span style="transform:rotate(30deg)">O</span>
+<span style="transform:rotate(60deg)">G</span>
+<span style="transform:rotate(90deg)">I</span>
+<span style="transform:rotate(120deg)">N</span>
+<span style="transform:rotate(150deg)">•</span>
+<span style="transform:rotate(180deg)">L</span>
+<span style="transform:rotate(210deg)">O</span>
+<span style="transform:rotate(240deg)">G</span>
+<span style="transform:rotate(270deg)">I</span>
+<span style="transform:rotate(300deg)">N</span>
+<span style="transform:rotate(330deg)">•</span>
+</div>
+
+</div>
+
+</body>
+</html>
