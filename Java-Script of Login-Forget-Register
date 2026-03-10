@@ -1,0 +1,55 @@
+<script>
+    // document.addEventListener("DOMContentLoaded", () => {
+    //     const UserNameInput = document.querySelector(".text-type");
+    //     const passwordInput = document.querySelector(".text-pass");
+    //     const LoginButton = document.querySelector(".Sign-up-1");
+    //     const ForgetPasswordButton = document.querySelector(".Sign-up-2");
+    //     const RegisterButton = document.querySelector(".Sign-up-3");
+
+    //     document.addEventListener("keydown"), (event) => {
+    //         if (event.key === "Enter") {
+    //             event.preventDefault();
+                
+    //             const activeElement = document.activeElement;
+
+    //             if (activeElement === UserNameInput || activeElement === passwordInput) {
+    //                 LoginButton.click();
+    //             } else if (activeElement === ForgetPasswordButton) {
+    //                 ForgetPasswordButton.click();
+    //             } else if (activeElement === RegisterButton) {
+    //                 RegisterButton.click();
+    //             }
+    //         }
+    //     }
+    // });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const loginButton = document.querySelector(".Sign-Up-1");
+
+        document.addEventListener("keydown", (event) => {
+            const activeElement = document.activeElement;
+            const isInputFocused = activeElement.tagName === "INPUT";
+
+            if (isInputFocused && event.key === "Enter") {
+                event.preventDefault();
+                loginButton.click();
+            }
+        });
+    });
+
+    
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const loginButton = document.querySelector(".Sign-Up-3");
+
+        document.addEventListener("keydown", (event) => {
+            const activeElement = document.activeElement;
+            const isInputFocused = activeElement.tagName === "INPUT";
+
+            if (isInputFocused && event.key === "Enter") {
+                event.preventDefault();
+                loginButton.click();
+            }
+        });
+    });
+</script>
