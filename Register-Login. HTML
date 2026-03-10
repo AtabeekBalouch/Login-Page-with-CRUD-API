@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Project-Login/CSS/Project-Login.css">
+</head>
+<body>
+    <div class="container">
+        <img class="Login-Image" src="Project-Login/Logo/Capture.JPG" alt="">
+
+        <div class="Orbit">
+            <span>REGISTER</span>
+        </div>
+
+        <input class="text-type" type="text" placeholder="Full Name">
+        <input class="text-type" type="email" placeholder="Email">
+        <input class="text-pass" type="password" placeholder="Password">
+        <input class="text-pass" type="password" placeholder="Confirm Password">
+
+        <a href="http://127.0.0.1:5500/html-css-course/intro-to-html/youtube.html" target="_blank">
+            <button class="Sign-Up-1" onclick="">
+                Register
+            </button>
+        </a>
+
+        <div class="bottom-buttons">
+            <a href="http://127.0.0.1:5500/html-css-course/Project-Login.html">
+                <button class="Sign-Up-2">
+                    Back to Login
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const SendResetLinkButton = document.querySelector(".Sign-Up-1");
+
+        document.addEventListener("keydown", (event) => {
+            const activeElement = document.activeElement;
+            const isInputFocused = activeElement.tagName === "INPUT";
+
+            if (isInputFocused && event.key === "Enter") {
+                event.preventDefault();
+                SendResetLinkButton.click();
+            }
+        });
+    });
+</script>
+</html>
